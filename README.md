@@ -1,6 +1,10 @@
-# Spree Starter
+# Spree eCommerce Technical Assessment
 
-This is a starter kit for [Spree Commerce](https://spreecommerce.org) - the open-source e-commerce platform for Rails. It is a great starting point for any Rails developer to quickly build an e-commerce application.
+This is a technical assessment for Quality Engineering using Spree Commerce platform.
+
+## About Spree Commerce
+
+This project uses [Spree Commerce](https://spreecommerce.org) - the open-source e-commerce platform for Rails. It is a great starting point for any Rails developer to quickly build an e-commerce application.
 
 This starter uses:
 
@@ -10,8 +14,6 @@ This starter uses:
 * [Solid Queue](https://github.com/rails/solid_queue) with Mission Control UI (access only to Spree admins) for background jobs
 * [Solid Cache](https://github.com/rails/solid_cache) for excellent caching and performance
 * PostgreSQL as a database
-
-You don't need to install any additional tools or libraries to start developing with Spree Starter. Everything is already set up for you.
 
 ## Local Installation
 
