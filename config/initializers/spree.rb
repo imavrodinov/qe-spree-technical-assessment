@@ -13,9 +13,19 @@
 # More on configuring Spree preferences can be found at:
 # https://docs.spreecommerce.org/developer/customization
 Spree.config do |config|
-  # Example:
-  # Uncomment to stop tracking inventory levels in the application
-  # config.track_inventory_levels = false
+  if Rails.env.development? || Rails.env.test?
+    config.allow_checkout_on_gateway_error = true
+    config.always_include_confirm_step = false
+
+    Spree::Order.class_eval do
+      checkout_flow do
+        go_to_state :address
+        go_to_state :delivery
+        go_to_state :payment
+        go_to_state :complete
+      end
+    end
+  end
 end
 
 # Background job queue names
