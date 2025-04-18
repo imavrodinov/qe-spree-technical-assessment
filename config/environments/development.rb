@@ -82,5 +82,6 @@ Rails.application.configure do
 
   # letter opener
   config.action_mailer.delivery_method = :letter_opener
-  config.action_mailer.perform_deliveries = true
+  # not considered as part of MVP tests but can be included in the coverage
+  config.action_mailer.perform_deliveries = false
 end
